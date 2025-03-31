@@ -1,0 +1,14 @@
+php artisan migrate:reset
+digunakan untuk menghapus semua table dan isinya
+
+php artisan migrate:fresh
+digunakan untuk menghapus semua tabel dan membuatnya kembali
+
+php artisan migrate:status
+digunakan untuk melihat daftar migrate yang pernaj dijalankan
+
+php artisan migrate:rollback --step=1
+digunakan untuk mundur 1 langkah dari daftar migrate status sesuai dengan valuenya 1
+
+php artisan make:migration <nama_migration> --create=<nama_tabel>
+template membuat file migrasi
